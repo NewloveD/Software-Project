@@ -1,0 +1,100 @@
+---
+title: 'Project Two | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'gallery/'
+eleventyNavigation:
+    key: Gallery Two
+    order: 3200
+    parent: Gallery
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Bowling For Autism</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling.jpeg">
+            <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling3.jpeg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling.jpeg" alt="new hallway" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling1.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling1.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling1.jpeg" alt="new home construction" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling3.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling3.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling3.jpeg" alt="building a new wall" loading="lazy" width="400" height="560">
+                    </picture>
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling2.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling2.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling2.jpeg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling4.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling4.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling4.jpeg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling5.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling5.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling5.jpeg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture>
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling6.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling6.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling6.jpeg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling7.jpeg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Gallery/Bowling-For-Autism/Bowling7.jpeg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Gallery/Bowling-For-Autism/Bowling7.jpeg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+            </div>
+            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
