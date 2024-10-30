@@ -1,0 +1,219 @@
+/* ========================================== */
+/*              REVIEWS PAGE STYLES           */
+/* ========================================== */
+#reviews {
+  margin: auto;
+  padding-top: 7.5rem;
+  padding-bottom: 3.125rem;
+}
+#reviews .container {
+  max-width: 82.5rem;
+  width: 96%;
+}
+#reviews .review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3125rem;
+  margin: auto;
+  margin-bottom: 6.25rem;
+  background: #fff;
+  max-width: 25.625rem;
+  width: 100%;
+  padding: 4rem 1.875rem 1.125rem 1.875rem;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+}
+#reviews .review .profile {
+  position: absolute;
+  top: -3.1875rem;
+  left: 1.875rem;
+  display: block;
+  border-radius: 50%;
+  height: 6.1875rem;
+  width: 6.1875rem;
+}
+#reviews .review p {
+  margin-bottom: 1.75rem;
+  line-height: 1.5em;
+  text-align: left;
+}
+#reviews .review .star-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e7e7e7;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+#reviews .review .star-group .name {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+#reviews .review .star-group .desc {
+  color: #575757;
+}
+#reviews .review .star-group img {
+  height: 0.9375rem;
+  width: 5.6875rem;
+}
+#reviews .review:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Dark Mode */
+body.dark-mode #reviews .review {
+  background: var(--medium);
+}
+body.dark-mode #reviews .review .name, body.dark-mode #reviews .review .desc {
+  color: #fff;
+}
+body.dark-mode #reviews .review .desc {
+  opacity: 0.7;
+}
+
+/* ========================================== */
+/*          DONATION SECTION STYLES           */
+/* ========================================== */
+.o-donate-hero {
+  margin: auto;
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.o-donate-hero .o-donate-hero__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+.o-donate-hero .o-donate-hero__text {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.o-donate-hero .o-donate-hero__form {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__tabs, .o-donate-hero .o-donate-hero__form .m-donate-form__amount {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__tabs .a-radio, .o-donate-hero .o-donate-hero__form .m-donate-form__amount .a-radio {
+  display: inline-block;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 1.125rem;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__tabs .a-radio:hover, .o-donate-hero .o-donate-hero__form .m-donate-form__amount .a-radio:hover {
+  border-color: #007bff;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__tabs .a-radio .a-radio__field, .o-donate-hero .o-donate-hero__form .m-donate-form__amount .a-radio .a-radio__field {
+  display: none;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__tabs .a-radio .a-radio__field:checked + .a-radio__label, .o-donate-hero .o-donate-hero__form .m-donate-form__amount .a-radio .a-radio__field:checked + .a-radio__label {
+  border-color: #007bff;
+  color: #007bff;
+  font-weight: bold;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__tabs .a-radio .a-radio__label, .o-donate-hero .o-donate-hero__form .m-donate-form__amount .a-radio .a-radio__label {
+  display: block;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.5rem;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__amount--other .a-inline-field__label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__amount--other .a-inline-field__input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s;
+}
+.o-donate-hero .o-donate-hero__form .m-donate-form__amount--other .a-inline-field__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.o-donate-hero .o-donate-hero__form .form-actions .a-button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 0.5rem;
+}
+.o-donate-hero .o-donate-hero__form .form-actions .a-button:hover {
+  background: #0056b3;
+}
+.o-donate-hero .o-donate-hero__content {
+  margin-top: 3rem;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate {
+  text-align: left;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate .m-featured-content-donate__title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate .m-featured-content-donate__text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #4a4a4a;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate .m-featured-content-donate__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate .m-featured-content-donate__stats .m-featured-content-donate__stats-wrapper {
+  max-width: 17.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate .m-featured-content-donate__stats .m-featured-content-donate__stats-wrapper .m-featured-content-donate__stats-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate .m-featured-content-donate__stats .m-featured-content-donate__stats-wrapper .m-featured-content-donate__stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+.o-donate-hero .o-donate-hero__content .m-featured-content-donate .m-featured-content-donate__stats .m-featured-content-donate__stats-wrapper .m-featured-content-donate__stats-text {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+/* Tablet */
+@media only screen and (min-width: 48rem) {
+  .o-donate-hero {
+    padding: 4.5rem 2rem;
+  }
+  .o-donate-hero .o-donate-hero__form {
+    padding: 3rem;
+  }
+}
+
+/*# sourceMappingURL=reviews.css.map */
