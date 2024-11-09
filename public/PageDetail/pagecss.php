@@ -1,21 +1,13 @@
-<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Standard meta tags -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ description }}">
+        <meta name="description" content="Meta description for the page">
         <meta name="keywords" content="">
-        <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
         <!--Social Media Display-->
-        <meta property="og:title" content="{{ title }}"/>
-        <meta property="og:description" content="{{ description }}"/>
+        <meta property="og:description" content="Meta description for the page"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
+        
         <meta property="og:image" content="../assets/images/logo-small.png"/>
         <meta property="og:image:secure_url" content="../assets/images/logo-small.png"/>
 
@@ -33,29 +25,14 @@
         <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-        {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}"/>
-        {% endif %}
+        
+            <link rel="preload" as="image" href="../assets/images/cabinets2.jpg"/>
+        
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="../assets/css/root.css">
         <link rel="stylesheet" href="../assets/css/dark.css">
         <script defer src="../assets/js/dark.js"></script>
         <script defer src="../assets/js/nav.js"></script>
-
-        {% block head %}{% endblock %}
-
-        <title>{{ title }}</title>
-    </head>
-    <body>
-        <!--Screen reader skip main nav-->
-        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
-
-        {% include "components/header.html" %}
-        <main id="main">
-            {% block body %}{% endblock %}
-        </main>
-        {% include "components/footer.html" %}
-
-    </body>
-</html>
+ 
+        <link rel="stylesheet" href="../assets/css/contact.css">
