@@ -54,7 +54,7 @@
                         <!--Main Article Image-->
                         <picture class="blog-mainImage">
                             <img
-                            src="/assets/images/blog/landing.jpg"
+                            src="../assets/images/blog/landing.jpg"
                             alt="Kitchen"
                             width="795"
                             height="400"
@@ -66,7 +66,7 @@
                                 <!--Author Image-->
                                 <picture class="blog-author-img">
                                     <img
-                                    src="/assets/svgs/profile.svg"
+                                    src="../assets/svgs/profile.svg"
                                     alt="house"
                                     width="32"
                                     height="32"
@@ -83,13 +83,13 @@
                             <p class="blog-desc">
                                 Lorem markdownum trabeati dicere deus.
                             </p>
-                            <a href="/blog/canitiem-saxa/" class="blog-link">Continue Reading</a>
+                            <a href="../blog/canitiem-saxa/" class="blog-link">Continue Reading</a>
                         </div>
                     </article><article class="recent-articles">
                         <!--Main Article Image-->
                         <picture class="blog-mainImage">
                             <img
-                            src="/assets/images/blog/landing.jpg"
+                            src="../assets/images/blog/landing.jpg"
                             alt="Kitchen"
                             width="795"
                             height="400"
@@ -101,7 +101,7 @@
                                 <!--Author Image-->
                                 <picture class="blog-author-img">
                                     <img
-                                    src="/assets/svgs/profile.svg"
+                                    src="../assets/svgs/profile.svg"
                                     alt="house"
                                     width="32"
                                     height="32"
@@ -118,13 +118,13 @@
                             <p class="blog-desc">
                                 Lorem markdownum Talia. Carinae equis.
                             </p>
-                            <a href="/blog/sucos-creati/" class="blog-link">Continue Reading</a>
+                            <a href="../blog/sucos-creati/" class="blog-link">Continue Reading</a>
                         </div>
                     </article><article class="recent-articles">
                         <!--Main Article Image-->
                         <picture class="blog-mainImage">
                             <img
-                            src="/assets/images/blog/landing.jpg"
+                            src="../assets/images/blog/landing.jpg"
                             alt="Kitchen"
                             width="795"
                             height="400"
@@ -136,7 +136,7 @@
                                 <!--Author Image-->
                                 <picture class="blog-author-img">
                                     <img
-                                    src="/assets/svgs/profile.svg"
+                                    src="../assets/svgs/profile.svg"
                                     alt="house"
                                     width="32"
                                     height="32"
@@ -153,7 +153,7 @@
                             <p class="blog-desc">
                                 Lorem markdownum tardantis unam mitissima dissimulator inposuit   corpus sintque tura tremenda, nec coetum.
                             </p>
-                            <a href="/blog/acuti-modo/" class="blog-link">Continue Reading</a>
+                            <a href="../blog/acuti-modo/" class="blog-link">Continue Reading</a>
                         </div>
                     </article>
         </div>
@@ -165,10 +165,10 @@
 <div class="blog-sidebar">
     <!--Featured-->
     <div class="blog-featured-group">
-        <span class="blog-header">Featured Posts</span><a class="blog-feature" href="/blog/canitiem-saxa/">
+        <span class="blog-header">Featured Posts</span><a class="blog-feature" href="../blog/canitiem-saxa/">
                 <picture class="blog-featureImage">
                     <img
-                        src="/assets/images/blog/landing.jpg" 
+                        src="../assets/images/blog/landing.jpg" 
                         alt="Kitchen"
                         width="60"
                         height="60"
