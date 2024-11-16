@@ -96,7 +96,7 @@
             '; ?>
         </nav>
 
-        <!-- Contact Us Button -->
+        <!-- Donate  Us Button -->
         <?php echo '
         <a href="../donate/" class="cs-button-solid cs-nav-button"> Donate </a>
         '; ?>
