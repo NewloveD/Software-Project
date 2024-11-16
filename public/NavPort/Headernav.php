@@ -98,7 +98,7 @@
 
         <!-- Contact Us Button -->
         <?php echo '
-        <a href="../contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="../donate/" class="cs-button-solid cs-nav-button"> Donate </a>
         '; ?>
 
         <?php  echo '
