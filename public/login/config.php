@@ -1,7 +1,9 @@
 <?php
 // Database configuration
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'testserver');
+$host = "127.0.0.1:3307";
+$username = "root";
+$password = "";
+$dbname = "testserver";
+
+
 ?>

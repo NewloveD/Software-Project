@@ -66,10 +66,10 @@
                     </li>
                     '; ?>
                     
-                    <!-- Donate Link -->
+                    <!-- contact Link -->
                     <?php echo '
                     <li class="cs-li">
-                        <a href="../donate/" class="cs-li-link">Donate</a>
+                        <a href="../contact/" class="cs-li-link">Contact</a>
                     </li>
                     '; ?>
                     
