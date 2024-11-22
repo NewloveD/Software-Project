@@ -1,12 +1,14 @@
 <?php
+// Start session
 session_start();
 
-// Unset session and delete cookie
+// Unset all session variables
 session_unset();
-session_destroy();
-setcookie("user_login", "", time() - 3600, "/"); // Expire cookie
 
-// Redirect to home page
-header("Location: /");
+// Destroy the session
+session_destroy();
+
+// Redirect to the homepage or login page
+header("Location: ../Home");
 exit;
 ?>
