@@ -19,8 +19,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Hash the password
         $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
 
-        // Connect to MySQL
+        //Added try catch statement in case the database has trouble connecting
+        try {
         $con = new mysqli($host, $username, $password, $dbname);
+        }
+        catch (MySQLDuplicateKeyException $e) {
+            // duplicate entry exception
+            $e->getMessage();
+        }
 
         // Check connection
         if ($con->connect_error) {
