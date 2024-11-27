@@ -8,9 +8,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $input_password = $_POST['password'];
 
     // Database connection
+
+    //Added try catch statement in case the database has trouble connecting
+    try {
     $con = new mysqli($host, $username, $password, $dbname);
-    if ($con->connect_error) {
-        die("Database connection failed: " . $con->connect_error);
+    }
+    catch (MySQLDuplicateKeyException $e) {
+        // duplicate entry exception
+        $e->getMessage();
     }
 
     // Query to check user credentials
