@@ -23,8 +23,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $con = new mysqli($host, $username, $password, $dbname);
 
         // Check connection
-        if ($con->connect_error) {
-            die("Database connection failed: " . $con->connect_error);
+        try
+        {
+            $con = new mysqli($host, $username, $password, $dbname);
+        }
+        catch(Exception $e)
+        {
+            echo $e->getMessage();
         }
 
         // Insert user into the database
